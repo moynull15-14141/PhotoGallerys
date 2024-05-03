@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class mood extends StatelessWidget {
-  const mood({super.key});
+class Astetic extends StatelessWidget {
+  const Astetic({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class mood extends StatelessWidget {
           backgroundColor: Colors.green,
           centerTitle: true,
           title: Text(
-            'Mood',
+            'Astetic',
             style: TextStyle(color: Colors.white),
           ),
         ),
@@ -49,13 +49,13 @@ class mood extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
-                  child: SizedBox(child: Image.asset('image/mood.jpg')),
+                  child: SizedBox(child: Image.asset('image/Astetic.jpg')),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                  'Mood With Nature',
+                  'Astetic With Nature',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
                 ),
                 Text(

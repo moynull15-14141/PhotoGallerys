@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class mood extends StatelessWidget {
-  const mood({super.key});
+class animals extends StatelessWidget {
+  const animals({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class mood extends StatelessWidget {
           backgroundColor: Colors.green,
           centerTitle: true,
           title: Text(
-            'Mood',
+            'Animals',
             style: TextStyle(color: Colors.white),
           ),
         ),
@@ -49,13 +49,13 @@ class mood extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
-                  child: SizedBox(child: Image.asset('image/mood.jpg')),
+                  child: SizedBox(child: Image.asset('image/animals.jpg')),
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Text(
-                  'Mood With Nature',
+                  'Animals With Nature',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.w500),
                 ),
                 Text(
@@ -85,14 +85,14 @@ class mood extends StatelessWidget {
                         width: 170,
                         child: Stack(
                           children: [
-                            Image.asset('image/city.jpg'),
+                            Image.asset('image/Flowers.jpg'),
                             Positioned(
                               top: 80,
                               bottom: 20,
                               right: 10,
-                              left: 130,
+                              left: 110,
                               child: Text(
-                                "City",
+                                "Flowers",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
@@ -106,14 +106,14 @@ class mood extends StatelessWidget {
                         width: 195,
                         child: Stack(
                           children: [
-                            Image.asset('image/road.jpg'),
+                            Image.asset('image/sky.jpg'),
                             Positioned(
                               top: 80,
                               bottom: 20,
                               right: 10,
                               left: 130,
                               child: Text(
-                                "Road",
+                                "Sky",
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,

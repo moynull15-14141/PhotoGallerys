@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:photo_gallery/Astetic.dart';
+import 'package:photo_gallery/animals.dart';
+import 'package:photo_gallery/city.dart';
 import 'package:photo_gallery/cnt.dart';
 import 'package:photo_gallery/mood.dart';
 
@@ -51,42 +54,138 @@ class _photoState extends State<photo> {
         padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => mood()));
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: .8,
-                      blurRadius: 7,
-                      offset: Offset(0, .8), // changes position of shadow
+            Row(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => mood()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
                     ),
-                  ],
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                ),
-                height: 150,
-                width: 180,
-                child: Stack(
-                  children: [
-                    Image.asset(
-                      'image/mood.jpg',
+                    height: 150,
+                    width: 180,
+                    child: Stack(
+                      children: [
+                        Image.asset(
+                          'image/mood.jpg',
+                        ),
+                        Positioned(
+                          top: 67,
+                          bottom: 60,
+                          right: 10,
+                          child: Text(
+                            'Mood',
+                            style: TextStyle(color: Colors.white, fontSize: 22),
+                          ),
+                        )
+                      ],
                     ),
-                    Positioned(
-                      top: 67,
-                      bottom: 60,
-                      right: 10,
-                      child: Text(
-                        'Mood',
-                        style: TextStyle(color: Colors.white, fontSize: 22),
-                      ),
-                    )
-                  ],
+                  ),
                 ),
-              ),
+                SizedBox(
+                  width: 8,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Astetic()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    ),
+                    height: 150,
+                    width: 150,
+                    child: Stack(
+                      children: [
+                        Image.asset(
+                          'image/Astetic.jpg',
+                        ),
+                        Positioned(
+                          top: 67,
+                          bottom: 60,
+                          right: 10,
+                          child: Text(
+                            'Astetic',
+                            style: TextStyle(color: Colors.white, fontSize: 22),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Row(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => animals()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    ),
+                    height: 150,
+                    width: 180,
+                    child: Stack(
+                      children: [
+                        Image.asset(
+                          'image/animals.jpg',
+                        ),
+                        Positioned(
+                          top: 67,
+                          bottom: 60,
+                          right: 10,
+                          child: Text(
+                            'Animals',
+                            style: TextStyle(color: Colors.white, fontSize: 22),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => city()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    ),
+                    height: 150,
+                    width: 150,
+                    child: Stack(
+                      children: [
+                        Image.asset(
+                          'image/city.jpg',
+                        ),
+                        Positioned(
+                          top: 63,
+                          bottom: 60,
+                          right: 10,
+                          child: Text(
+                            'City',
+                            style: TextStyle(color: Colors.white, fontSize: 22),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
