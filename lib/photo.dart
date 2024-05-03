@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:photo_gallery/Astetic.dart';
+import 'package:photo_gallery/Flowers.dart';
 import 'package:photo_gallery/Travels.dart';
 import 'package:photo_gallery/animals.dart';
 import 'package:photo_gallery/city.dart';
 import 'package:photo_gallery/cnt.dart';
 import 'package:photo_gallery/mood.dart';
+import 'package:photo_gallery/road.dart';
+import 'package:photo_gallery/sky.dart';
 
 class photo extends StatefulWidget {
   const photo({super.key});
@@ -231,25 +234,25 @@ class _photoState extends State<photo> {
                   InkWell(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Astetic()));
+                          MaterialPageRoute(builder: (context) => sky()));
                     },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                       ),
                       height: 150,
-                      width: 150,
+                      width: 160,
                       child: Stack(
                         children: [
                           Image.asset(
-                            'image/Astetic.jpg',
+                            'image/sky.jpg',
                           ),
                           Positioned(
-                            top: 67,
+                            top: 60,
                             bottom: 60,
                             right: 10,
                             child: Text(
-                              'Astetic',
+                              'Sky',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 22),
                             ),
@@ -265,7 +268,7 @@ class _photoState extends State<photo> {
                   InkWell(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => mood()));
+                          MaterialPageRoute(builder: (context) => road()));
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -276,14 +279,14 @@ class _photoState extends State<photo> {
                       child: Stack(
                         children: [
                           Image.asset(
-                            'image/mood.jpg',
+                            'image/road.jpg',
                           ),
                           Positioned(
                             top: 67,
                             bottom: 60,
                             right: 10,
                             child: Text(
-                              'Mood',
+                              'road',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 22),
                             ),
@@ -298,7 +301,7 @@ class _photoState extends State<photo> {
                   InkWell(
                     onTap: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Astetic()));
+                          MaterialPageRoute(builder: (context) => Flowers()));
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -309,14 +312,14 @@ class _photoState extends State<photo> {
                       child: Stack(
                         children: [
                           Image.asset(
-                            'image/Astetic.jpg',
+                            'image/Flowers.jpg',
                           ),
                           Positioned(
                             top: 67,
                             bottom: 60,
                             right: 10,
                             child: Text(
-                              'Astetic',
+                              'Flowers',
                               style:
                                   TextStyle(color: Colors.white, fontSize: 22),
                             ),
