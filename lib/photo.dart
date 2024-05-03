@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_gallery/Astetic.dart';
+import 'package:photo_gallery/Travels.dart';
 import 'package:photo_gallery/animals.dart';
 import 'package:photo_gallery/city.dart';
 import 'package:photo_gallery/cnt.dart';
@@ -52,142 +53,282 @@ class _photoState extends State<photo> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => mood()));
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    ),
-                    height: 150,
-                    width: 180,
-                    child: Stack(
-                      children: [
-                        Image.asset(
-                          'image/mood.jpg',
-                        ),
-                        Positioned(
-                          top: 67,
-                          bottom: 60,
-                          right: 10,
-                          child: Text(
-                            'Mood',
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mood()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 180,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/mood.jpg',
                           ),
-                        )
-                      ],
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Mood',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Astetic()));
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    ),
-                    height: 150,
-                    width: 150,
-                    child: Stack(
-                      children: [
-                        Image.asset(
-                          'image/Astetic.jpg',
-                        ),
-                        Positioned(
-                          top: 67,
-                          bottom: 60,
-                          right: 10,
-                          child: Text(
-                            'Astetic',
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Astetic()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 150,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/Astetic.jpg',
                           ),
-                        )
-                      ],
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Astetic',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Row(
-              children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => animals()));
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    ),
-                    height: 150,
-                    width: 180,
-                    child: Stack(
-                      children: [
-                        Image.asset(
-                          'image/animals.jpg',
-                        ),
-                        Positioned(
-                          top: 67,
-                          bottom: 60,
-                          right: 10,
-                          child: Text(
-                            'Animals',
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+                ],
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => animals()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 180,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/animals.jpg',
                           ),
-                        )
-                      ],
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Animals',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  width: 8,
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => city()));
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
-                    ),
-                    height: 150,
-                    width: 150,
-                    child: Stack(
-                      children: [
-                        Image.asset(
-                          'image/city.jpg',
-                        ),
-                        Positioned(
-                          top: 63,
-                          bottom: 60,
-                          right: 10,
-                          child: Text(
-                            'City',
-                            style: TextStyle(color: Colors.white, fontSize: 22),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => city()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 150,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/city.jpg',
                           ),
-                        )
-                      ],
+                          Positioned(
+                            top: 63,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'City',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
-            )
-          ],
+                ],
+              ),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Travels()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 180,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/Travel.jpg',
+                          ),
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Travel',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Astetic()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 150,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/Astetic.jpg',
+                          ),
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Astetic',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => mood()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 180,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/mood.jpg',
+                          ),
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Mood',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Astetic()));
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      height: 150,
+                      width: 150,
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'image/Astetic.jpg',
+                          ),
+                          Positioned(
+                            top: 67,
+                            bottom: 60,
+                            right: 10,
+                            child: Text(
+                              'Astetic',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 22),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     ));
