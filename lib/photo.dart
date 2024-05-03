@@ -4,7 +4,7 @@ import 'package:photo_gallery/Flowers.dart';
 import 'package:photo_gallery/Travels.dart';
 import 'package:photo_gallery/animals.dart';
 import 'package:photo_gallery/city.dart';
-import 'package:photo_gallery/cnt.dart';
+
 import 'package:photo_gallery/mood.dart';
 import 'package:photo_gallery/road.dart';
 import 'package:photo_gallery/sky.dart';
