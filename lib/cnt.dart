@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 class cnt extends StatelessWidget {
-  double? height;
-  double? width;
-  cnt({super.key, required this.height, required this.width});
+  Image? image;
+  Text? text;
+  cnt({super.key, required this.image, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
-      width: width,
-      color: Colors.amber,
-    );
+        height: 100,
+        width: 80,
+        color: Colors.amber,
+        child: Stack(
+          children: [Image.asset('$image'), Text("$text")],
+        ));
   }
 }
